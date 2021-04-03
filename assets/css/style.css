@@ -106,20 +106,6 @@ a.text_underline:hover::before {
     height: 200px;
 }
 
-
-/* .hero-text {
-   float: right;
-   margin-top: 5%;
-   margin-right: 5%;
-   width: 350px;
-   height: 50px;
-   background-color: var(--medgreen);
-   background-size: 150vh;
-   text-align: center;
-   color: var(--darkgreen);
-   font-size: 3rem;
-} */
-
 .hero-box {
     background-color: var(--medgreen);
     width: 350px;
@@ -158,11 +144,6 @@ a.text_underline:hover::before {
 }
 
 
-/* .about-me_title h2 {
-    padding-right: 50px;
-} */
-
-
 /* about me text properties. */
 
 .float-right {
@@ -174,4 +155,52 @@ a.text_underline:hover::before {
 .Work {
     display: flex;
     padding: 2%;
+}
+
+.weather {
+    background-image: url(../images/weather.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    border: 10px solid var(--medgreen);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: 200px 200px;
+    /* text-align: center; */
+    padding-top: 20px;
+    grid-gap: 20px;
+}
+
+.item1 {
+    /* background-image: url();
+    background-position: center;
+    background-size: cover; */
+    border: solid 10px var(--medgreen);
+}
+
+.item2 {
+    /* background-image: url();
+    background-size: cover;
+    background-position: center; */
+    border: solid 10px var(--medgreen);
+}
+
+.item3 {
+    border: solid 10px var(--medgreen);
+}
+
+.item4 {
+    border: solid 10px var(--medgreen);
+}
+
+.inbox-text {
+    display: inline-block;
+    position: relative;
+    top: 55%;
+    background-color: var(--medgreen);
+    padding-left: 30px;
+    padding-right: 20px;
 }
