@@ -22,6 +22,7 @@ body {
 
 header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     background-color: var(--darkgreen);
@@ -124,6 +125,14 @@ a.text_underline:hover::before {
 }
 
 
+/* main Flex wrap */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
 /* About me content, display set to flex. */
 
 .about-me {
@@ -154,6 +163,7 @@ a.text_underline:hover::before {
 
 .Work {
     display: flex;
+    flex-wrap: wrap;
     padding: 2%;
 }
 
@@ -265,11 +275,29 @@ a.text_underline:hover::before {
     padding-right: 20px;
 }
 
+.inbox-text::before {
+    content: "";
+    position: relative;
+    height: 5px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--Light1green);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.inbox-text:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
 
 /* Footer, Contact me section */
 
 .contact-me {
     display: flex;
+    /* flex-wrap: wrap; */
     padding: 2%;
 }
 
@@ -282,3 +310,30 @@ a.text_underline:hover::before {
 .contact-me a {
     color: rgb(78, 78, 78);
 }
+
+
+/* Media Query Properties */
+
+@media screen and (max-width: 992px) {
+    .grid-container {
+        grid-template-columns: auto;
+        grid-template-rows: 200px 200px 200px 200px;
+    }
+    .float_left {
+        flex: none;
+        border-right: none;
+        border-bottom: 10px solid var(--medgreen);
+        padding-right: none;
+        text-align: center;
+    }
+}
+
+
+/* Cards are stacked on top of each other at 768px or smaller */
+
+
+/* @media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: auto;
+    }
+} */
