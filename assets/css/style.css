@@ -31,11 +31,12 @@ header {
 }
 
 .namebackground {
+    /* display: inline-block; */
     position: relative;
     left: 0px;
     bottom: 7px;
     background-color: var(--Light1green);
-    width: 400px;
+    width: 358px;
     height: 75px;
     margin: 0px;
 }
