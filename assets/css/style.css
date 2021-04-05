@@ -41,9 +41,6 @@ header {
 }
 
 .name {
-    /* display: flex;
-    justify-content: end;
-    align-items: center; */
     position: relative;
     left: 8%;
     font-size: 4rem;
@@ -70,10 +67,6 @@ header {
 /* Undreline text for navigation on the left of the heaer. */
 
 .text_underline {
-    /* display: inline-block;
-    border-bottom: 5px solid;
-    padding-bottom: 0;
-    line-height: 100%; */
     position: relative;
 }
 
@@ -251,38 +244,7 @@ main {
 }
 
 
-/* .item1 { */
-
-
-/* background-image: url();
-    background-position: center;
-    background-size: cover; */
-
-
-/* border: solid 10px var(--medgreen);
-} */
-
-
-/* .item2 { */
-
-
-/* background-image: url();
-    background-size: cover;
-    background-position: center; */
-
-
-/* border: solid 10px var(--medgreen);
-} */
-
-
-/* .item3 {
-    border: solid 10px var(--medgreen);
-} */
-
-
-/* .item4 {
-    border: solid 10px var(--medgreen);
-} */
+/* Text inside images on grid */
 
 .inbox-text {
     display: inline-block;
@@ -292,23 +254,6 @@ main {
     padding-left: 30px;
     padding-right: 20px;
 }
-
-
-/* .inbox-text::before {
-    content: "";
-    display: inline-block;
-    position: relative;
-    left: 0;
-    background-color: var(--Light1green);
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out;
-}
-
-.inbox-text:hover::before {
-    visibility: visible;
-    transform: scaleX(1);
-} */
 
 
 /* Footer, Contact me section */
@@ -326,7 +271,6 @@ main {
     min-width: 400px;
     font-size: 2.5rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    /* padding-right: 50px; */
 }
 
 .contact-me li {
@@ -374,13 +318,3 @@ main {
         text-align: center;
     }
 }
-
-
-/* Cards are stacked on top of each other at 768px or smaller */
-
-
-/* media screen and (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: auto;
-    }
-} */
