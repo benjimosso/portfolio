@@ -178,6 +178,9 @@ main {
     border: 10px solid var(--medgreen);
 }
 
+
+/*  Image to fit grid */
+
 .weather img {
     width: 100%;
     height: 100%;
@@ -193,6 +196,9 @@ main {
     padding-left: 30px;
     padding-right: 20px;
 }
+
+
+/* Weather image Hover effect */
 
 .weather img {
     opacity: 0.6;
@@ -217,12 +223,18 @@ main {
     border: solid 10px var(--medgreen);
 }
 
+
+/* Setting for image to fit grid */
+
 .item img {
     width: 100%;
     height: 100%;
     display: block;
     object-fit: cover;
 }
+
+
+/* ray scale effect hover */
 
 .item img {
     filter: grayscale(100%);
@@ -304,7 +316,7 @@ main {
 .contact-me {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 17px;
+    padding: 2%;
 }
 
 .ul2 {
@@ -314,7 +326,7 @@ main {
     min-width: 400px;
     font-size: 2.5rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-right: 50px;
+    /* padding-right: 50px; */
 }
 
 .contact-me li {
