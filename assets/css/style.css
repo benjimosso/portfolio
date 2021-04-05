@@ -136,6 +136,13 @@ main {
     padding-top: 100px;
 }
 
+.about-me img {
+    float: left;
+    height: 135px;
+    width: 110px;
+    margin: 5px;
+}
+
 .about-me p {
     text-align: left;
 }
