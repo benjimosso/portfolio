@@ -137,7 +137,13 @@ main {
 
 .about-me {
     display: flex;
+    flex-wrap: wrap;
     padding: 2%;
+    padding-top: 100px;
+}
+
+.about-me p {
+    text-align: left;
 }
 
 
@@ -275,11 +281,11 @@ main {
     padding-right: 20px;
 }
 
-.inbox-text::before {
+
+/* .inbox-text::before {
     content: "";
+    display: inline-block;
     position: relative;
-    height: 5px;
-    bottom: -5px;
     left: 0;
     background-color: var(--Light1green);
     visibility: hidden;
@@ -290,15 +296,25 @@ main {
 .inbox-text:hover::before {
     visibility: visible;
     transform: scaleX(1);
-}
+} */
 
 
 /* Footer, Contact me section */
 
 .contact-me {
     display: flex;
-    /* flex-wrap: wrap; */
-    padding: 2%;
+    flex-wrap: wrap;
+    padding-left: 17px;
+}
+
+.ul2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 400px;
+    font-size: 2.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-right: 50px;
 }
 
 .contact-me li {
@@ -320,10 +336,29 @@ main {
         grid-template-rows: 200px 200px 200px 200px;
     }
     .float_left {
-        flex: none;
+        flex: 100%;
         border-right: none;
-        border-bottom: 10px solid var(--medgreen);
-        padding-right: none;
+        padding-right: 0px;
+        text-align: center;
+    }
+    .float-right {
+        padding-right: 0%;
+        padding-left: 0%;
+    }
+    header {
+        height: 130px;
+        justify-content: center;
+    }
+    .ul2 {
+        display: block;
+        text-align: center;
+    }
+    .ul {
+        padding-right: 0px;
+        min-width: 360px;
+        font-size: 2rem;
+    }
+    .about-me p {
         text-align: center;
     }
 }
@@ -332,7 +367,7 @@ main {
 /* Cards are stacked on top of each other at 768px or smaller */
 
 
-/* @media screen and (max-width: 768px) {
+/* media screen and (max-width: 768px) {
     .grid-container {
         grid-template-columns: auto;
     }
